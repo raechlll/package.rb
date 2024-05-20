@@ -20,6 +20,6 @@ waarde met omgezette eenheid
 Omzetten van lengtemetingen (km, m, cm en mm)
 }
 \examples{
-#' x <- c(2, 3.5, 15, 230)
+x <- c(2, 3.5, 15, 230)
 rb_length(x, from = "m", to = "mm")
 }
