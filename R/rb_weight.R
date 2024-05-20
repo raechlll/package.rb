@@ -8,6 +8,8 @@
 #' @export
 #'
 #' @examples
+#' x <- c(2, 3.5, 15, 230)
+#' rb_weight(x, from = "g", to = "mg")
 rb_weight <- function(value, from, to) {
        if (from == "kg" && to == "g") {
              return(value * 1000)
