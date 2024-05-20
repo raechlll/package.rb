@@ -10,7 +10,7 @@
 #' @examples
 #' #' x <- c(2, 3.5, 15, 230)
 #' rb_length(x, from = "m", to = "mm")
-rb_lenght <- function(value, from, to) {
+rb_length <- function(value, from, to) {
        if (from == "m" && to == "cm") {
              return(value * 100)
          } else if (from == "cm" && to == "m") {
