@@ -1,0 +1,49 @@
+---
+output: github_document
+---
+
+<!-- README.md is generated from README.Rmd. Please edit that file -->
+
+```{r, include = FALSE}
+knitr::opts_chunk$set(
+  collapse = TRUE,
+  comment = "#>",
+  fig.path = "man/figures/README-",
+  out.width = "100%"
+)
+```
+
+# package.rb
+
+<!-- badges: start -->
+<!-- badges: end -->
+
+Package.rb is all about making it easy to convert and play around with measurements like length, weight, and temperature in R, so you can breeze through your data tasks without breaking a sweat.
+
+## Installation
+
+You can install the development version of package.rb from [GitHub](https://github.com/) with:
+
+``` r
+# install.packages("devtools")
+devtools::install_github("raechlll/package.rb")
+```
+
+## Usage
+
+When working with measurements like length, weight, and temperature, you often need to convert between different units. This is where package.rb comes in handy.
+
+```{r}
+library(package.rb)
+
+x <- c(2, 3.5, 15, 230)
+# Example: Convert temperature from Celsius to Kelvin
+convert_temperature(20, from = "C", to = "K")
+
+# Example: Convert length from centimeters to meters
+convert_length(150, from = "cm", to = "m")
+
+# Example: Convert weight from kilograms to grams
+convert_weight(70, from = "kg", to = "g")
+```
+
