@@ -1,3 +1,6 @@
+---
+output: github_document
+---
 
 <!-- README.md is generated from README.Rmd. Please edit that file -->
 
@@ -26,7 +29,7 @@ When working with measurements like length, weight, and temperature, you
 often need to convert between different units. This is where package.rb
 comes in handy.
 
-``` {r}
+``` {r eval=F}
 library(package.rb)
 
 # Example: Convert temperature from Celsius to Kelvin
