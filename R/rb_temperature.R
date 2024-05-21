@@ -12,9 +12,9 @@
 #' rb_temperature(x, from = "C", to = "K")
 rb_temperature <- function(value, from, to) {
   if (from == "C" && to == "K") {
-    return(value + 273.15)  # °C naar K
+    return(value + 273.15)
   } else if (from == "K" && to == "C") {
-    return(value - 273.15)  # K naar °C
+    return(value - 273.15)
   } else {
     return("Ongeldige eenheid. Gebruik 'C' of 'K'.")[[1]]
   }
