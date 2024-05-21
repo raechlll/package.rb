@@ -9,8 +9,9 @@
 #' @export
 #'
 #' @examples
-#' rb_mol(x, y, massa, molaire_massa)
-#' rb_mol(32, 16, massa = "g", molaire_massa = "mol")
+#' x <- 32
+#' y <- 16
+#' rb_mol(x, y, massa = "g", molaire_massa = "mol")
 rb_mol <- function(x, y, massa, molaire_massa) {
        if (massa == "g" && molaire_massa == "mol") {
          return(x / y)
@@ -31,6 +32,6 @@ rb_mol <- function(x, y, massa, molaire_massa) {
        } else if (massa == "mg" && molaire_massa == "kmol") {
          return((x / 1000000) / y)
          }else {
-           return("Ongeldige eenheid. Gebruik 'kg', 'g' of 'mg'.")
+           return("Ongeldige eenheid. Gebruik 'kg', 'g' of 'mg'.")[[1]]
          }
    }

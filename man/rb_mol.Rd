@@ -22,6 +22,7 @@ aantal mol van de stof
 Molberekening (kg, g, mg, kmol, mol en mmol)
 }
 \examples{
-rb_mol(x, y, massa, molaire_massa)
-rb_mol(32, 16, massa = "g", molaire_massa = "mol")
+x <- 32
+y <- 16
+rb_mol(x, y, massa = "g", molaire_massa = "mol")
 }

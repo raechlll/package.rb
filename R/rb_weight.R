@@ -24,6 +24,6 @@ rb_weight <- function(value, from, to) {
                  } else if (from == "mg" && to == "kg") {
                        return(value / 1000000)
                    } else {
-                         return("Ongeldige eenheid. Gebruik 'kg', 'g' of 'mg'.")
-                     }[[1]]
+                         return("Ongeldige eenheid. Gebruik 'kg', 'g' of 'mg'.")[[1]]
+                     }
    }
