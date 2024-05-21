@@ -1,8 +1,8 @@
 #' Omzetten van temperatuur (Celcius en Kelvin)
 #'
 #' @param value waarde die omgezet moet worden
-#' @param from eenheid waarvan de waarde afkomstig is
-#' @param to eenheid waarvan de waarde omgezet moet worden
+#' @param from eenheid waarvan de waarde afkomstig is (C of K)
+#' @param to eenheid waarvan de waarde omgezet moet worden (C of K)
 #'
 #' @return waarde met omgezette eenheid
 #' @export

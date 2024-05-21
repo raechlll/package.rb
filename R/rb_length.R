@@ -1,8 +1,8 @@
-#' Omzetten van lengtemetingen (km, m, cm en mm)
+#' Omzetten van lengtemetingen
 #'
 #' @param value waarde die omgezet moet worden
-#' @param from eenheid waarvan de waarde afkomstig is
-#' @param to eenheid waarvan de waarde omgezet moet worden
+#' @param from eenheid waarvan de waarde afkomstig is (km, m, cm of mm)
+#' @param to eenheid waarvan de waarde omgezet moet worden (km, m, cm of mm)
 #'
 #' @return waarde met omgezette eenheid
 #' @export

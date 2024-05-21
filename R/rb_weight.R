@@ -1,8 +1,8 @@
-#' Omzetten van gewichtsmetingen (kg, g en mg)
+#' Omzetten van gewichtsmetingen
 #'
 #' @param value waarde die omgezet moet worden
-#' @param from eenheid waarvan de waarde afkomstig is
-#' @param to eenheid waarvan de waarde omgezet moet worden
+#' @param from eenheid waarvan de waarde afkomstig is (kg, g of mg)
+#' @param to eenheid waarvan de waarde omgezet moet worden (kg, g of mg)
 #'
 #' @return waarde met omgezette eenheid
 #' @export
