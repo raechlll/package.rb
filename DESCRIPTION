@@ -3,7 +3,7 @@ Title: R package metingen
 Version: 0.0.0.9000
 Authors@R: 
     person("Rachel", "Breuer", , "rachel@example.com", role = c("aut", "cre"))
-Description: R package bevat functies die metingen omzet, waaronder gewicht, lengte en temperatuur. 
+Description: R package bevat functies die metingen omzet, waaronder gewicht, lengte en temperatuur en aantal mol berekent. 
 License: MIT + file LICENSE
 Encoding: UTF-8
 Roxygen: list(markdown = TRUE)

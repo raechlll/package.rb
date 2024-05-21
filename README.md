@@ -1,3 +1,6 @@
+---
+output: github_document
+---
 
 <!-- README.md is generated from README.Rmd. Please edit that file -->
 
@@ -6,9 +9,7 @@
 <!-- badges: start -->
 <!-- badges: end -->
 
-Package.rb is all about making it easy to convert and play around with
-measurements like length, weight, and temperature in R, so you can
-breeze through your data tasks without breaking a sweat.
+**Package.rb** provides a collection of functions to convert various units, including weight, length and temperature. In addition, it also contains functions for simple mole calculations.
 
 ## Installation
 
@@ -22,11 +23,13 @@ devtools::install_github("raechlll/package.rb")
 
 ## Usage
 
-When working with measurements like length, weight, and temperature, you
-often need to convert between different units. This is where package.rb
-comes in handy.
+When working with measurements such as length, weight, temperature, and even mole calculations, it is often necessary to convert between different units. This is where the **package.rb** package comes in handy.
 
-``` {r}
+With **package.rb** you can easily convert measurements between different units for length, weight, and temperature. In addition, it also provides mole calculation functions, which allow you to calculate the number of moles of a substance based on the given mass and molar mass.
+
+Here's an example of how you can use **package.rb** to both convert measurements and perform mole calculations:
+
+``` {r eval=F}
 library(package.rb)
 
 # Example: Convert temperature from Celsius to Kelvin
@@ -40,4 +43,8 @@ rb_length(150, from = "cm", to = "m")
 # Example: Convert weight from kilograms to grams
 rb_weight(70, from = "kg", to = "g")
 #> [1] 70000
+
+# Example: Calculate number of moles
+rb_mol(32, 16, massa = "g", molaire_massa = "mol")
+#> [1] 2
 ```
