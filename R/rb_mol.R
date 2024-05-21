@@ -10,6 +10,7 @@
 #'
 #' @examples
 #' rb_mol(x, y, massa, molaire_massa)
+#' rb_mol(32, 16, massa = "g", molaire_massa = "mol")
 rb_mol <- function(x, y, massa, molaire_massa) {
        if (massa == "g" && molaire_massa == "mol") {
          return(x / y)

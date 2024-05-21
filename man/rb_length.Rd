@@ -2,22 +2,22 @@
 % Please edit documentation in R/rb_length.R
 \name{rb_length}
 \alias{rb_length}
-\title{Omzetten van lengtemetingen (km, m, cm en mm)}
+\title{Omzetten van lengtemetingen}
 \usage{
 rb_length(value, from, to)
 }
 \arguments{
 \item{value}{waarde die omgezet moet worden}
 
-\item{from}{eenheid waarvan de waarde afkomstig is}
+\item{from}{eenheid waarvan de waarde afkomstig is (km, m, cm of mm)}
 
-\item{to}{eenheid waarvan de waarde omgezet moet worden}
+\item{to}{eenheid waarvan de waarde omgezet moet worden (km, m, cm of mm)}
 }
 \value{
 waarde met omgezette eenheid
 }
 \description{
-Omzetten van lengtemetingen (km, m, cm en mm)
+Omzetten van lengtemetingen
 }
 \examples{
 x <- c(2, 3.5, 15, 230)

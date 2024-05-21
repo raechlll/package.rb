@@ -9,9 +9,9 @@ rb_temperature(value, from, to)
 \arguments{
 \item{value}{waarde die omgezet moet worden}
 
-\item{from}{eenheid waarvan de waarde afkomstig is}
+\item{from}{eenheid waarvan de waarde afkomstig is (C of K)}
 
-\item{to}{eenheid waarvan de waarde omgezet moet worden}
+\item{to}{eenheid waarvan de waarde omgezet moet worden (C of K)}
 }
 \value{
 waarde met omgezette eenheid

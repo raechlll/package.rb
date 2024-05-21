@@ -2,22 +2,22 @@
 % Please edit documentation in R/rb_weight.R
 \name{rb_weight}
 \alias{rb_weight}
-\title{Omzetten van gewichtsmetingen (kg, g en mg)}
+\title{Omzetten van gewichtsmetingen}
 \usage{
 rb_weight(value, from, to)
 }
 \arguments{
 \item{value}{waarde die omgezet moet worden}
 
-\item{from}{eenheid waarvan de waarde afkomstig is}
+\item{from}{eenheid waarvan de waarde afkomstig is (kg, g of mg)}
 
-\item{to}{eenheid waarvan de waarde omgezet moet worden}
+\item{to}{eenheid waarvan de waarde omgezet moet worden (kg, g of mg)}
 }
 \value{
 waarde met omgezette eenheid
 }
 \description{
-Omzetten van gewichtsmetingen (kg, g en mg)
+Omzetten van gewichtsmetingen
 }
 \examples{
 x <- c(2, 3.5, 15, 230)
