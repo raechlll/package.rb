@@ -1,0 +1,104 @@
+---
+title: "my-vignette"
+author: "Rachel Breuer"
+output: rmarkdown::html_vignette
+vignette: >
+  %\VignetteIndexEntry{my-vignette}
+  %\VignetteEngine{knitr::rmarkdown}
+  %\VignetteEncoding{UTF-8}
+---
+
+```{r, include = FALSE}
+knitr::opts_chunk$set(
+  collapse = TRUE,
+  comment = "#>"
+)
+```
+
+```{r setup}
+library(package.rb)
+```
+
+**Package.rb** provides a collection of functions to convert various units, including weight, length and temperature. In addition, it also contains functions for simple mole calculations.
+
+## Installation
+The following packages are required:  
+- utils
+- knitr
+- usethis
+- devtools
+
+You can install the development version of package.rb from
+[GitHub](https://github.com/) with: 
+- install.packages("devtools")
+- devtools::install_github("raechlll/package.rb")
+
+## Usage
+
+When working with measurements such as length, weight, temperature, and even mole calculations, it is often necessary to convert between different units. This is where the **package.rb** package comes in handy.
+
+With **package.rb** you can easily convert measurements between different units for length, weight, and temperature. In addition, it also provides mole calculation functions, which allow you to calculate the number of moles of a substance based on the given mass and molar mass.
+
+## Functies
+**rb_weight**
+- Description: Omzetten van gewichtsmetingen
+- Arguments
+    - value:waarde die omgezet moet worden
+    - from: eenheid waarvan de waarde afkomstig is (kg, g of mg)
+    - to: eenheid waarvan de waarde omgezet moet worden (kg, g of mg)
+
+- Value: waarde met omgezette eenheid
+
+**rb_length**
+- Description: Omzetten van lengtemetingen
+- Arguments
+    - value:waarde die omgezet moet worden
+    - from: eenheid waarvan de waarde afkomstig is (km, m, cm of mm)
+    - to: eenheid waarvan de waarde omgezet moet worden (km, m, cm of mm)
+
+- Value: waarde met omgezette eenheid
+
+
+**rb_temperature**
+- Description: Omzetten van temperatuur (Celcius en Kelvin)
+- Arguments
+    - value:waarde die omgezet moet worden
+    - from: eenheid waarvan de waarde afkomstig is (C of K)
+    - to: eenheid waarvan de waarde omgezet moet worden (C of K)
+
+- Value: waarde met omgezette eenheid
+
+
+**rb_mol**
+- Description: Molberekening (kg, g, mg, kmol, mol en mmol)
+- Arguments
+    - x: gewicht van stof
+    - y: molaire gewicht van stof
+    - mass: gewicht eenheid (kg, g of mg)
+    - molaire_massa: molaire massa eenheid (kmol, mol of mmol)
+
+- Value: waarde met omgezette eenheid
+
+
+## Example
+Here's an example of how you can use **package.rb** to both convert measurements and perform mole calculations:
+
+``` {r eval=F}
+library(package.rb)
+
+# Example: Convert temperature from Celsius to Kelvin
+rb_temperature(20, from = "C", to = "K")
+#> [1] 293.15
+
+# Example: Convert length from centimeters to meters
+rb_length(150, from = "cm", to = "m")
+#> [1] 1.5
+
+# Example: Convert weight from kilograms to grams
+rb_weight(70, from = "kg", to = "g")
+#> [1] 70000
+
+# Example: Calculate number of moles
+rb_mol(32, 16, massa = "g", molaire_massa = "mol")
+#> [1] 2
+```

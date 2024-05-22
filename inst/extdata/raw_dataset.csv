@@ -1,0 +1,6 @@
+name,weight_kg,length_cm,temperature_c,mol
+Alice,70,165,37,0.02
+Bob,80,180,36.5,0.025
+Charlie,75,175,36.8,0.03
+David,65,170,37.1,0.015
+Eva,55,160,36.7,0.022
