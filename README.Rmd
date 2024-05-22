@@ -16,7 +16,7 @@ output: github_document
 You can install the development version of package.rb from
 [GitHub](https://github.com/) with:
 
-``` r
+``` {r}
 # install.packages("devtools")
 devtools::install_github("raechlll/package.rb")
 ```
